@@ -13,7 +13,7 @@ MAINTAINER askme765cs
 ################## BEGIN INSTALLATION ######################
 #install kodexplorer
 RUN git clone https://github.com/kalcaddle/KODExplorer.git
-RUN chmod -Rf 777 ./KODExplorer/*
+RUN chmod -Rf 777 /KODExplorer
 ENV WEB_DOCUMENT_ROOT /KODExplorer
 ##################### INSTALLATION END #####################
 
