@@ -11,14 +11,10 @@ From webdevops/php-nginx
 MAINTAINER askme765cs
 
 ################## BEGIN INSTALLATION ######################
-#install git
-RUN apt-get update
-RUN apt-get install git
 #install kodexplorer
-RUN cd /app
 RUN git clone https://github.com/kalcaddle/KODExplorer.git
 RUN chmod -Rf 777 ./KODExplorer/*
-ENV WEB_DOCUMENT_ROOT /app/KODExplorer
+ENV WEB_DOCUMENT_ROOT /KODExplorer
 ##################### INSTALLATION END #####################
 
 # Expose the default port
